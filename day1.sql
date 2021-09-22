@@ -1,5 +1,5 @@
  show databases;  
-  create database students;
+ create database students;
 
  use students;
  show tables;
@@ -14,7 +14,19 @@ select * from stud_table s where s.name='sujan';
  select * from stud_table;
  
  select id, name from stud_table;
+ 
  select name, marks from stud_table;
+ 
+ select * from stud_table where marks>600;
+ 
+ select * from stud_table where marks>500;
+ 
+ select * from stud_table where marks>600 and marks<1000;
+ 
+ select * from stud_table where marks>600 and marks<1000;
+ 
+ select name as Stud_name from stud_table;
+ 
  
  create table teachers(
   id int not null primary key,
@@ -24,7 +36,9 @@ select * from stud_table s where s.name='sujan';
   
   insert into teachers(id,name,salary)
   values (1,'ravi',50000),(2,'ramu',30000),(3,'kavana',20000),(4,'raghu',40000);
+  
   select * from teachers;
+  
   select count(*) as Total_salary from teachers;
   
   select name from teachers;

@@ -54,4 +54,7 @@ alter table stud_table drop result;
    select * from sales join orders_sales;
    select * from orders_sales;
     select * from sales where salesID in (select id from orders_sales where productName = 'Fogg' || adress='Hyderabad' );
+    
+     select * from sales where salesID in (select id from orders_sales where productName = 'acer');
+     
     select * from sales;
